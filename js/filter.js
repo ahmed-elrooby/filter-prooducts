@@ -11,16 +11,15 @@ lis.forEach((item)=>{
     })
 
    })
-   item.addEventListener("click",filteration)
-
-})
-function filteration(){
+   item.addEventListener("click",function(){
     imgs.forEach((img)=>{
         img.style.display="none"
     })
     document.querySelectorAll(this.dataset.fil).forEach((ele)=>{
         ele.style.display="block"
     })
-}
+   })
 
-// filter
+})
+
+

@@ -1,0 +1,41 @@
+#container {
+    align-items:center;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    text-align:center;
+    gap:2px;
+}
+#container .card{
+    border:1px solid green;
+    padding:10px;
+    height:600px;
+    max-height:100%;
+    position:relative;
+
+}
+#container .card img{
+    max-width:100%;
+    height:400px;
+}
+#container .card .flex{
+    display:flex;
+    gap:5px;
+    margin:10px auto;
+    justify-content:center;
+    
+}
+#container .card .flex li{
+    border:1px solid green ;
+    list-style:none;
+    padding:5px 10px;
+    border-radius:10px
+}
+.vote{
+    background:red;
+    padding:5px 20px;
+    position:absolute;
+    top:2px;
+    right:2px;
+    color:white;
+    border-bottom-left-radius: 30px;
+}
